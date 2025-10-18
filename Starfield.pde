@@ -9,7 +9,7 @@ void setup(){
 }
 void draw()
 {
-    background(255);
+    background(0);
     ellipse(10,10,10,10);
 	for(int i=0;i<100;i++){
        p[i].show();
@@ -33,7 +33,7 @@ class Particle
        myy+=(speed*Math.sin(angle));
     }
     void show(){
-       fill(255,0,0);
+       fill(250);
        ellipse((float)myx,(float)myy,5,5);
     }
 
