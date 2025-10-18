@@ -9,6 +9,7 @@ void setup(){
 }
 void draw()
 {
+    background(255);
     ellipse(10,10,10,10);
 	for(int i=0;i<100;i++){
        p[i].show();
