@@ -29,6 +29,10 @@ class Particle
 
     }
     void move(){
+       if(myy<0||myx<0||myx>500||myy>500){
+         myx=mouseX;
+         myy=mouseY;
+       }
        myx+=(speed*Math.cos(angle));
        myy+=(speed*Math.sin(angle));
     }
@@ -38,9 +42,9 @@ class Particle
     }
 
 }
-class OddballParticle exteneds Particle
-{
+//class OddballParticle extends Particle
+//{
 	//your code here
-}
+//}
 
 
