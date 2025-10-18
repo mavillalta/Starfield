@@ -8,6 +8,7 @@ void setup()
 }
 void draw()
 {
+    ellipse(10,10,10,10);
 	for(int i=0;i<particle.length,i++){
        p[i].show();
        p[i].move();
@@ -30,14 +31,15 @@ class Particle
        myy+=(speed*Math.sin(angle));
     }
     void show(){
-    ellipse((float)myx,(float)myy,5,5);
+       fill(col);
+       ellipse((float)myx,(float)myy,5,5);
     }
 
 }
 
-class OddballParticle //inherits from Particle
-{
+////class OddballParticle //inherits from Particle
+//{
 	//your code here
-}
+//}
 
 
