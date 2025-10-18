@@ -21,8 +21,8 @@ class Particle
 	double myx,myy,speed,angle;
     int col;
     Particle(){
-      myx=250;
-      myy=250;
+      myx=500;
+      myy=500;
       speed=10*Math.random()+1;
       angle=3.14159265*2*Math.random();
      // col=color((int)(256*Math.random()),(int)(256*Math.random()),(int)(256*Math.random()));
@@ -39,7 +39,7 @@ class Particle
     }
     void show(){
        fill(250);
-       ellipse((float)myx+mouseX,(float)myy+mouseY,5,5);
+       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,5,5);
     }
 
 }
