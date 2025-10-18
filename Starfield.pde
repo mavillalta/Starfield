@@ -1,15 +1,38 @@
 //your code here
+Particle[] p = new  Particle[10];
 void setup()
 {
-	//your code here
+	size(500,500);
+    for(int i=0;i<particle.length,i++)
+       p[i]= new Particle();
 }
 void draw()
 {
-	//your code here
+	for(int i=0;i<particle.length,i++){
+       p[i].show();
+       p[i].move();
+    }
 }
 class Particle
 {
-	//your code here
+	double myx,myy,speed,angle;
+    int col;
+    Particle(){
+      myx=0;
+      myy=0;
+      speed=100*Math.random();
+      angle=3.14159265*2*Math.random();
+      col=color((int)(256*Math.random()),(int)(256*Math.random()),(int)(256*Math.random()));
+
+    }
+    void move(){
+       myx+=(speed*Math.cos(angle));
+       myy+=(speed*Math.sin(angle));
+    }
+    void show(){
+    ellipse((float)myx,(float)myy,5,5);
+    }
+
 }
 
 class OddballParticle //inherits from Particle
