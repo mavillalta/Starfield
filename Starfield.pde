@@ -32,6 +32,7 @@ class Particle
        if(myy<0||myx<0||myx>500||myy>500){
          myx=mouseX;
          myy=mouseY;
+         speed=10*Math.random()+3;
        }
        myx+=(speed*Math.cos(angle));
        myy+=(speed*Math.sin(angle));
