@@ -23,7 +23,7 @@ class Particle
     Particle(){
       myx=250;
       myy=250;
-      speed=10*Math.random();
+      speed=10*Math.random()+3;
       angle=3.14159265*2*Math.random();
      // col=color((int)(256*Math.random()),(int)(256*Math.random()),(int)(256*Math.random()));
 
