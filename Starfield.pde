@@ -1,7 +1,7 @@
 //your code here
-Particle[] p = new  Particle[10];
-void setup()
-{
+Particle[] p;
+void setup(){   
+    p = new Particle[10];
 	size(500,500);
     for(int i=0;i<particle.length,i++)
        p[i]= new Particle();
