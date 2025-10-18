@@ -1,7 +1,7 @@
 //your code here
 Particle[] p;
 void setup(){   
-    size(500,500);
+    size(1000,1000);
     p = new Particle[100];
 	
     for(int i=0;i<100;i++)
@@ -39,7 +39,7 @@ class Particle
     }
     void show(){
        fill(250);
-       ellipse((float)myx,(float)myy,5,5);
+       ellipse((float)myx+mouseX,(float)myy+mouseY,5,5);
     }
 
 }
