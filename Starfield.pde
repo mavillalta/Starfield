@@ -23,7 +23,7 @@ class Particle
       myy=0;
       speed=100*Math.random();
       angle=3.14159265*2*Math.random();
-      col=color((int)(256*Math.random()),(int)(256*Math.random()),(int)(256*Math.random()));
+     // col=color((int)(256*Math.random()),(int)(256*Math.random()),(int)(256*Math.random()));
 
     }
     void move(){
@@ -31,7 +31,7 @@ class Particle
        myy+=(speed*Math.sin(angle));
     }
     void show(){
-       fill(col);
+       fill(255,0,0);
        ellipse((float)myx,(float)myy,5,5);
     }
 
