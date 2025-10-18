@@ -10,7 +10,7 @@ void setup(){
 void draw()
 {
     ellipse(10,10,10,10);
-	for(int i=0;i<particle.length,i++){
+	for(int i=0;i<10;i++){
        p[i].show();
        p[i].move();
     }
