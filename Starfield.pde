@@ -10,7 +10,7 @@ void setup(){
 void draw()
 {
     background(0);
-    ellipse(10,10,10,10);
+    
 	for(int i=0;i<100;i++){
        p[i].show();
        p[i].move();
@@ -38,10 +38,9 @@ class Particle
     }
 
 }
-
-////class OddballParticle //inherits from Particle
-//{
+class OddballParticle exteneds Particle
+{
 	//your code here
-//}
+}
 
 
