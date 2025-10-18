@@ -29,7 +29,7 @@ class Particle
 
     }
     void move(){
-       if(myy<0||myx<0||myx>500||myy>500){
+       if(myy<0||myx<0||myx>1000||myy>1000){
          myx=mouseX;
          myy=mouseY;
          speed=10*Math.random()+3;
