@@ -8,14 +8,14 @@ void setup(){
 void draw()
 {
     background(0);
-	for(int i=0;i<100;i++){
+  for(int i=0;i<100;i++){
        p[i].show();
        p[i].move();
     }
 }
 class Particle
 {
-	double myx,myy,speed,angle;
+  double myx,myy,speed,angle;
     int col;
     Particle(){
       myx=500;
@@ -25,8 +25,8 @@ class Particle
     }
     void move(){
        if(myy+mouseY-500<0||myx+mouseX-500<0||myx+mouseX-500>1000||myy+mouseY-500>1000){
-         myx=mouseX;
-         myy=mouseY;
+         myx=500;
+         myy=500;
          speed=10*Math.random()+3;
        }
        myx+=(speed*Math.cos(angle));
@@ -34,10 +34,10 @@ class Particle
     }
     void show(){
        fill(250);
-       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,Math.abs(((myx**2+myy**2)**0.5)/50,Math.abs((myx**2+myy**2)**0.5)/50);
+       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,(float)Math.pow((Math.pow((myx-500),2)+Math.pow((myy-500),2)),0.5)/25,(float)Math.pow((Math.pow((myx-500),2)+Math.pow((myy-500),2)),0.5)/25);
     }
 }
 //class OddballParticle extends Particle
 //{
-	//your code here
+  //your code here
 //}
