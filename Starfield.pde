@@ -34,7 +34,7 @@ class Particle
     }
     void show(){
        fill(250);
-       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,Math.abs(mouseX-500)/50,Math.abs(mouseY-500)/50);
+       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,Math.abs(((myx**2+myy**2)**0.5)/50,Math.abs((myx**2+myy**2)**0.5)/50);
     }
 }
 //class OddballParticle extends Particle
