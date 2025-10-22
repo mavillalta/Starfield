@@ -39,7 +39,7 @@ class Particle
     }
     void show(){
        fill(250);
-       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,5,5);
+       ellipse((float)myx+mouseX-500,(float)myy+mouseY-500,Math.abs(mousex-500)/50,Math.abs(mouseY-500)/50);
     }
 
 }
